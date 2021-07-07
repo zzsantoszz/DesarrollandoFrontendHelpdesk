@@ -1,0 +1,34 @@
+.img-1 {
+    background-image: url(../img4/img-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url(../img4/img-2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.box {
+    flex: 0 0 auto;
+    width: 60%;
+}
+
+.container {
+    display: flex;
+}
+
+
+/*
+.container{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto*/
+
+.user-img {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: right;
+}
+
+.user-img img {
+    height: 50px;
+}
