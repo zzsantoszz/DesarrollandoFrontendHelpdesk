@@ -5,28 +5,56 @@
 
 <head>
     <!--ahi estan etiquetas de cabecera-->
-    <meta chasrset="UTF-8">
+    <meta charset="UTF-8">
     <!--la pagina tendra caracteres especiales-->
     <meta name="description" content="Descripcion: Acceso al sistema.">
     <!--descripcion-->
     <title>Login</title>
+    <link rel="stylesheet" href="normalize/normalize.css">
     <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="css/bootstrap 4.0.0/bootstrap.min.css">
     <!--Hoja de estilos    estilo css-->
 </head>
 
 <body>
-
+<!--
     <header class="main-header">
         <picture>
             <img src="img/icono.png" class="icono-image" alt="imagen icono">
         </picture>
         <span class="icono-titulo">Sistema de<strong> Ticket Helpdesk</strong></span>
     </header>
-
+-->
     <main class="container-principal">
         <div class="container">
-            <div class="box"></div>
-            <div class="box"></div>
+            <div class="items bg d-none d-lg-block caja1">
+                <!--<picture><img src="img/MEF_sede.png"></picture>-->
+            </div>
+            <div class="items bg-white caja2">
+                <figure class="user-img">
+                    <img src="img/logo.png">
+                </figure>
+                <h1 class="titulo-bienvenido">Bienvenido</h1>
+                <br>
+                <form action="pages/pagina_principal.html" method="POST">
+                        <input type="text" class="form-control" placeholder="Nombre de usuario" autocomplete="name" required/>
+                        <br>
+                        <input type="password" class="form-control" placeholder="Contrasena" required/>
+                        <br>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input">
+                            <label class="form-check-label" >Mantenerme contacto</label>
+                          </div>
+                          <br> 
+                        <button class="btn btn-primary" type="submit">INICIAR SESION</button>
+                        <button class="btn btn-info" type="reset">RESTABLECER</button>            
+                        <!--<ul class="forgot">
+                            <li><span>No tienes cuenta? </span><a href="#" target="_blank"> Registrate</a></li>
+                            <li><a href="#" target="_blank">Recuperar contrasena</a></li>
+                        </ul>-->
+                        <br>                            
+                </form>
+            </div>
         </div>
     </main>
 
